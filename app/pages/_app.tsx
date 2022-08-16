@@ -1,12 +1,30 @@
 import type { AppProps } from "next/app";
-import Layout from "../components/Layouts";
+import ColorMap from "../components/colorMap";
+import Layout from "../components/layouts";
 import "../styles/globals.css";
+import { colorMap } from "../templateConfig";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <style>{`
+        ::-webkit-scrollbar {
+          width: 0.5rem;
+        }
+        ::-webkit-scrollbar-track {
+          background: ${colorMap["1000"]};
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: ${colorMap["50"]};
+          border-radius: 1rem;
+        }
+      `}</style>
+      <Layout>
+        <Component {...pageProps} />
+        <ColorMap />
+      </Layout>
+    </>
   );
 }
 
