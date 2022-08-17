@@ -1,0 +1,28 @@
+[
+    {
+        "author": "John Doe",
+        "authorID": 1,
+        "title": "God Of War - Ghost Of Sparta - PSP ROM DUMP",
+        "body": "Enim minim deserunt dolor nisi aliqua et cillum adipisicing cupidatat. Tempor sit ullamco occaecat sunt dolore ex. Excepteur pariatur duis nisi velit est amet do mollit sit ex. Elit incididunt dolore enim commodo pariatur tempor elit non. Ad eiusmod laboris tempor reprehenderit cillum officia ipsum. Elit dolore minim exercitation tempor officia.",
+        "group": [
+            {
+                "name": "ROM DUMP",
+                "id": 2,
+                "color": "#52F17F"
+            }
+        ]
+    },
+    {
+        "author": "C Doe",
+        "authorID": 2,
+        "title": "",
+        "body": "This is the first post",
+        "groups": [
+            {
+                "name": "General",
+                "id": 1,
+                "color": "#505050"
+            }
+        ]
+    }
+]
