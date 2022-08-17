@@ -7,6 +7,12 @@ const options = {
       "The Emulation Authority is a community of emulation enthusiasts.", // The description of the community
     logo: "https://i.ibb.co/Ms4hFcZ/Vector-1.png", // The logo of the community
     color: "#392298", // main color
+    banner: {
+      mobile: "", // The banner of the community for mobile [image or video]
+      tablet: "", // The banner of the community for tablet [image or video]
+      desktop: "", // The banner of the community for desktop [image or video]
+      dynamic: "", // The banner of the community [React Component]
+    },
   },
 };
 
