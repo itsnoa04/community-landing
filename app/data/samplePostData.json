@@ -1,6 +1,8 @@
 [
     {
+        "id": 1,
         "author": "John Doe",
+        "authorImg": "https://xsgames.co/randomusers/assets/avatars/male/41.jpg",
         "authorID": 1,
         "title": "God Of War - Ghost Of Sparta - PSP ROM DUMP",
         "body": "Enim minim deserunt dolor nisi aliqua et cillum adipisicing cupidatat. Tempor sit ullamco occaecat sunt dolore ex. Excepteur pariatur duis nisi velit est amet do mollit sit ex. Elit incididunt dolore enim commodo pariatur tempor elit non. Ad eiusmod laboris tempor reprehenderit cillum officia ipsum. Elit dolore minim exercitation tempor officia.",
@@ -14,6 +16,7 @@
     },
     {
         "author": "C Doe",
+        "authorImg": "https://xsgames.co/randomusers/assets/avatars/female/43.jpg",
         "authorID": 2,
         "title": "",
         "body": "This is the first post",
