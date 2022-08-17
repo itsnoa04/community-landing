@@ -6,26 +6,53 @@
         "authorID": 1,
         "title": "God Of War - Ghost Of Sparta - PSP ROM DUMP",
         "body": "Enim minim deserunt dolor nisi aliqua et cillum adipisicing cupidatat. Tempor sit ullamco occaecat sunt dolore ex. Excepteur pariatur duis nisi velit est amet do mollit sit ex. Elit incididunt dolore enim commodo pariatur tempor elit non. Ad eiusmod laboris tempor reprehenderit cillum officia ipsum. Elit dolore minim exercitation tempor officia.",
-        "group": [
-            {
-                "name": "ROM DUMP",
-                "id": 2,
-                "color": "#52F17F"
-            }
-        ]
+        "group": {
+            "name": "ROM DUMP",
+            "id": 2,
+            "color": "#52F17F",
+            "textColor": "#000000"
+        }
     },
     {
+        "id": 2,
         "author": "C Doe",
         "authorImg": "https://xsgames.co/randomusers/assets/avatars/female/43.jpg",
         "authorID": 2,
-        "title": "",
+        "title": "First Post 🥳🥳",
         "body": "This is the first post",
-        "groups": [
-            {
-                "name": "General",
-                "id": 1,
-                "color": "#505050"
-            }
-        ]
+        "group": {
+            "name": "General",
+            "id": 1,
+            "color": "#505050",
+            "textColor": "#FFFFFF"
+        }
+    },
+    {
+        "id": 3,
+        "author": "John Doe",
+        "authorImg": "https://xsgames.co/randomusers/assets/avatars/male/41.jpg",
+        "authorID": 1,
+        "title": "God Of War - Ghost Of Sparta - PSP ROM DUMP",
+        "body": "Enim minim deserunt dolor nisi aliqua et cillum adipisicing cupidatat. Tempor sit ullamco occaecat sunt dolore ex. Excepteur pariatur duis nisi velit est amet do mollit sit ex. Elit incididunt dolore enim commodo pariatur tempor elit non. Ad eiusmod laboris tempor reprehenderit cillum officia ipsum. Elit dolore minim exercitation tempor officia.",
+        "group": {
+            "name": "ROM DUMP",
+            "id": 2,
+            "color": "#52F17F",
+            "textColor": "#000000"
+        }
+    },
+    {
+        "id": 4,
+        "author": "C Doe",
+        "authorImg": "https://xsgames.co/randomusers/assets/avatars/female/43.jpg",
+        "authorID": 2,
+        "title": "First Post 🥳🥳",
+        "body": "This is the first post",
+        "group": {
+            "name": "General",
+            "id": 1,
+            "color": "#505050",
+            "textColor": "#FFFFFF"
+        }
     }
 ]

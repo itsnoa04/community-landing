@@ -6,7 +6,7 @@ import { colorMap } from "../templateConfig";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div className="bg-black">
       <style>{`
         ::-webkit-scrollbar {
           width: 0.5rem;
@@ -19,12 +19,12 @@ function MyApp({ Component, pageProps }: AppProps) {
           background: ${colorMap["50"]};
           border-radius: 1rem;
         }
-      `}</style>
+        `}</style>
       <Layout>
         <Component {...pageProps} />
         <ColorMap />
       </Layout>
-    </>
+    </div>
   );
 }
 
