@@ -1,4 +1,4 @@
-import { colorMap } from "../templateConfig";
+import { colorMap } from "../../templateConfig";
 
 const ColorMap = () => {
   return (

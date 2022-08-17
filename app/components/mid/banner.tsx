@@ -1,4 +1,4 @@
-import DynamicBanner from "./dynamicBanner";
+import DynamicBanner from "../sample/dynamicBanner";
 
 const Banner = () => {
   return (

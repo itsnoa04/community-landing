@@ -1,4 +1,4 @@
-import options from "../templateConfig";
+import options from "../../templateConfig";
 
 const DynamicBanner = () => {
   return (

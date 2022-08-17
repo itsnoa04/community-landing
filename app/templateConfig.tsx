@@ -3,8 +3,9 @@ import ShadeGenerator, { Shade } from "shade-generator";
 const options = {
   community: {
     name: "The Emulation Athority", // The name of the community
+    tagline: "The Emulation Authority is a community of emulation enthusiasts.", // The description of the community
     description:
-      "The Emulation Authority is a community of emulation enthusiasts.", // The description of the community
+      "Magna sunt do non esse ullamco anim sunt sint deserunt consectetur exercitation elit. Aliqua enim amet occaecat culpa dolor dolore. Magna culpa sit irure aliqua nisi aliquip labore est amet laborum labore et ex. Pariatur qui aute laboris ipsum consequat excepteur consequat labore aliqua labore. Mollit elit aliqua est occaecat voluptate id id Lorem voluptate commodo aliqua. Enim eiusmod proident sit amet ipsum.", // Rules and information about the community
     logo: "https://i.ibb.co/Ms4hFcZ/Vector-1.png", // The logo of the community
     color: "#392298", // main color
     banner: {

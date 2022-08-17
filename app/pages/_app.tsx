@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app";
-import ColorMap from "../components/colorMap";
-import Layout from "../components/layouts";
+import Layout from "../components/global/layouts";
+import ColorMap from "../components/utils/colorMap";
 import "../styles/globals.css";
 import { colorMap } from "../templateConfig";
 

@@ -1,4 +1,4 @@
-import options from "../templateConfig";
+import options from "../../templateConfig";
 import Button from "./button";
 
 export default function Navbar() {
