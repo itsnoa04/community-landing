@@ -1,13 +1,20 @@
 import color from "color";
 import options, { colorMap } from "../../templateConfig";
 
-const Bubble = ({ children }: any) => {
+interface BubbleProps {
+  children: any;
+  className?: string;
+  style?: any;
+}
+
+const Bubble = ({ children, className = "", style = {} }: BubbleProps) => {
   return (
     <div
       style={{
         backgroundColor: color(colorMap["900"]).desaturate(0.7).hex(),
+        ...style,
       }}
-      className="text-white m-5 p-3 rounded-xl "
+      className={`text-white m-5 p-3 rounded-xl ${className}`}
     >
       {children}
     </div>

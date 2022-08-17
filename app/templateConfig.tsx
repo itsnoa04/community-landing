@@ -7,7 +7,7 @@ const options = {
     description:
       "Magna sunt do non esse ullamco anim sunt sint deserunt consectetur exercitation elit. Aliqua enim amet occaecat culpa dolor dolore. Magna culpa sit irure aliqua nisi aliquip labore est amet laborum labore et ex. Pariatur qui aute laboris ipsum consequat excepteur consequat labore aliqua labore. Mollit elit aliqua est occaecat voluptate id id Lorem voluptate commodo aliqua. Enim eiusmod proident sit amet ipsum.", // Rules and information about the community
     logo: "https://i.ibb.co/Ms4hFcZ/Vector-1.png", // The logo of the community
-    color: "#392298", // main color
+    color: "#7D6BC5", // main color
     banner: {
       mobile: "", // The banner of the community for mobile [image or video]
       tablet: "", // The banner of the community for tablet [image or video]

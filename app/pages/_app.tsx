@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         `}</style>
       <Layout>
         <Component {...pageProps} />
-        <ColorMap />
+        {/* <ColorMap /> */}
       </Layout>
     </div>
   );
