@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
+import Members from "../components/members/members";
 import Banner from "../components/mid/banner";
 import Description from "../components/mid/description";
 import Feed from "../components/mid/feed";
-import MobileFeed from "../components/mid/mobileFeed";
 import Tagline from "../components/mid/tagline";
 
 const Home: NextPage = () => {
@@ -22,12 +22,15 @@ const Home: NextPage = () => {
           transition: "none",
         }}
       ></div>
-      <div className="flex">
-        <div>
+      <div className="lg:flex">
+        <div className="lg:flex-auto">
           <Banner />
           <Tagline />
           <Description />
           <Feed />
+        </div>
+        <div className="flex lg:flex-auto">
+          <Members />
         </div>
       </div>
     </>

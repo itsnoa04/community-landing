@@ -1,16 +1,16 @@
 [
     {
         "id": 1,
-        "firstName": "John",
-        "lastName": "Doe",
+        "firstName": "Devamsh",
+        "lastName": "Manoj",
         "role": "creator",
         "bio": "Tempor laboris eiusmod sint labore voluptate ea irure ut consectetur sint ipsum occaecat aliquip. Veniam Lorem tempor ipsum officia culpa occaecat nulla enim. Ullamco quis quis laboris exercitation duis minim ad aliqua magna.",
         "social": {
-            "youtube": "",
-            "twitter": "",
-            "github": ""
+            "youtube": "https://www.youtube.com/channel/UCUpQqo61AAH5Gf0yqjbGeAw",
+            "twitter": "https://twitter.com/itsNoa04",
+            "github": "https://github.com/itsnoa04"
         },
-        "icon": "https://xsgames.co/randomusers/assets/avatars/male/41.jpg"
+        "icon": "https://avatars.githubusercontent.com/u/70159114?v=4"
     },
     {
         "id": 2,
