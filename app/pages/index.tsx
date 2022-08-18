@@ -19,16 +19,14 @@ const Home: NextPage = () => {
           height: "100vh",
           zIndex: 20,
           bottom: 0,
+          transition: "none",
         }}
       ></div>
-      <div>
-        <Banner />
-        <Tagline />
-        <Description />
-        <div className="md:hidden">
-          <MobileFeed />
-        </div>
-        <div className="hidden md:block">
+      <div className="flex">
+        <div>
+          <Banner />
+          <Tagline />
+          <Description />
           <Feed />
         </div>
       </div>
