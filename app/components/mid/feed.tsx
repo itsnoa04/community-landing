@@ -20,11 +20,13 @@ const Feed = () => {
 
   return (
     <>
+      <h1 className="text-md font-bold text-white p-7 pb-1 pr-10">LIVE FEED</h1>
+
       <div className="hidden md:block">
         {feed.map((item) => {
           return (
             <FeedItem
-              key={item?.id}
+              key={item.id}
               author={item?.author}
               authorImage={item?.authorImg}
               title={item?.title}
@@ -62,9 +64,8 @@ const Feed = () => {
             >
               {feed.map((item) => {
                 return (
-                  <SwiperSlide>
+                  <SwiperSlide key={item.id}>
                     <MobileFeedItem
-                      key="1"
                       author={item?.author}
                       title={item?.title}
                       groupName={item?.group.name}

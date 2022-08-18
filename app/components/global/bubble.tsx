@@ -11,7 +11,7 @@ const Bubble = ({ children, className = "", style = {} }: BubbleProps) => {
   return (
     <div
       style={{
-        backgroundColor: color(colorMap["900"]).desaturate(0.7).hex(),
+        backgroundColor: color(colorMap["1000"]).desaturate(0.7).hex(),
         ...style,
       }}
       className={`text-white m-5 p-3 rounded-xl ${className}`}

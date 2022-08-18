@@ -1,7 +1,6 @@
 import Bubble from "../global/bubble";
 
 export interface MobileFeedItemProps {
-  key: string;
   author: string;
   authorImage: string;
   title: string;
@@ -10,7 +9,6 @@ export interface MobileFeedItemProps {
   groupTextColor: string;
 }
 const MobileFeedItem = ({
-  key,
   author,
   title,
   groupName,
@@ -19,7 +17,7 @@ const MobileFeedItem = ({
   groupTextColor,
 }: MobileFeedItemProps) => {
   return (
-    <div key={key}>
+    <div>
       <Bubble className="m-0 p-5" style={{ height: "50vh" }}>
         <div className="flex">
           <img

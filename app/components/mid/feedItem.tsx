@@ -1,7 +1,6 @@
 import Bubble from "../global/bubble";
 
 export interface FeedItemProps {
-  key: string;
   author: string;
   authorImage: string;
   title: string;
@@ -10,7 +9,6 @@ export interface FeedItemProps {
   groupTextColor: string;
 }
 const FeedItem = ({
-  key,
   author,
   title,
   groupName,
@@ -19,7 +17,7 @@ const FeedItem = ({
   groupTextColor,
 }: FeedItemProps) => {
   return (
-    <div key={key}>
+    <div>
       <Bubble>
         <div className="flex items-center">
           <div className="flex  mr-16">

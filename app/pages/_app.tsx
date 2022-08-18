@@ -7,7 +7,12 @@ import { colorMap } from "../templateConfig";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className="bg-black">
+    <div
+      className="bg-black"
+      style={{
+        transition: "none",
+      }}
+    >
       <style>{`
         ::-webkit-scrollbar {
           width: 0.25rem;
