@@ -1,4 +1,6 @@
 import type { NextPage } from "next";
+import SimpleBar from "simplebar-react";
+import "simplebar-react/dist/simplebar.min.css";
 import Members from "../components/members/members";
 import Banner from "../components/mid/banner";
 import Description from "../components/mid/description";
@@ -22,15 +24,19 @@ const Home: NextPage = () => {
           transition: "none",
         }}
       ></div>
-      <div className="lg:flex">
-        <div className="lg:flex-auto">
-          <Banner />
-          <Tagline />
-          <Description />
-          <Feed />
+      <div className="md:flex">
+        <div className="lg:w-80-screen md:w-70-screen">
+          <SimpleBar style={{ maxHeight: "100vh", width: "100%" }}>
+            <Banner />
+            <Tagline />
+            <Description />
+            <Feed />
+          </SimpleBar>
         </div>
-        <div className="flex lg:flex-auto">
-          <Members />
+        <div className="flex md:flex-auto">
+          <SimpleBar style={{ maxHeight: "100vh", width: "100%" }}>
+            <Members />
+          </SimpleBar>
         </div>
       </div>
     </>

@@ -11,7 +11,7 @@ const DynamicBanner = () => {
         backgroundPosition: "center",
       }}
     >
-      <h1 className="text-6xl font-black bg-transparent">
+      <h1 className="text-2xl md:text-5xl lg:text-6xl font-black bg-transparent">
         THE <br />
         EMULATION <br />
         AUTHORITY
