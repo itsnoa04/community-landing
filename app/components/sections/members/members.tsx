@@ -4,6 +4,7 @@ import SimpleBar from "simplebar-react";
 import usersSchema from "../../../schema/users";
 import Bubble from "../../global/bubble";
 import Creators from "./creators";
+import Mods from "./mods";
 
 export interface MembersProps {}
 
@@ -30,22 +31,7 @@ const Members: React.FC<MembersProps> = (props) => {
     <SimpleBar style={{ maxHeight: "100vh", width: "100%" }}>
       <div className="flex flex-col">
         <Creators creatorList={creators} />
-        <h1 className="text-md font-bold text-white pt-3 pl-0 pr-10">MODS</h1>
-        {mods.map((user) => {
-          return (
-            <Bubble
-              key={user.id}
-              className="flex m-1 ml-0 p-2 justify-start items-center "
-            >
-              <img
-                src={user.icon}
-                alt="user avatar"
-                className="w-16 rounded-xl"
-              />
-              <h1 className="text-xl pl-12 font-bold">{`${user.firstName} ${user.lastName}`}</h1>
-            </Bubble>
-          );
-        })}
+        <Mods modList={mods} />
         <h1 className="text-md font-bold text-white pt-3 pl-0 pr-10">
           MEMBERS
         </h1>
