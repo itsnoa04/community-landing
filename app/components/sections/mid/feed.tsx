@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import feedSchema from "../../schema/feed";
+import feedSchema from "../../../schema/feed";
 import FeedItem from "./feedItem";
 import MobileFeedItem from "./mobileFeedItem";
 

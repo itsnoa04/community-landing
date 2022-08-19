@@ -1,13 +1,7 @@
 import type { NextPage } from "next";
-import SimpleBar from "simplebar-react";
-import "simplebar-react/dist/simplebar.min.css";
-import Members from "../components/members/members";
-import Banner from "../components/mid/banner";
-import Description from "../components/mid/description";
-import FAQ from "../components/mid/faq";
-import Feed from "../components/mid/feed";
-import Tagline from "../components/mid/tagline";
-import Testimonials from "../components/mid/testimonials";
+import Groups from "../components/sections/groups/groups";
+import Members from "../components/sections/members/members";
+import Mid from "../components/sections/mid/mid";
 
 const Home: NextPage = () => {
   return (
@@ -27,22 +21,14 @@ const Home: NextPage = () => {
         }}
       ></div>
       <div className="lg:flex">
-        <div className="lg:w-70-screen">
-          <SimpleBar style={{ maxHeight: "100vh", width: "100%" }}>
-            <Banner />
-            <Tagline />
-            <Description />
-            <Testimonials />
-            <FAQ />
-            <Feed />
-            <div className="h-20-screen"></div>
-          </SimpleBar>
-        </div>
         <div className="flex lg:flex-auto">
-          <SimpleBar style={{ maxHeight: "100vh", width: "100%" }}>
-            <Members />
-            <div className="h-20-screen"></div>
-          </SimpleBar>
+          <Groups />
+        </div>
+        <div className="lg:w-50-screen">
+          <Mid />
+        </div>
+        <div className="flex lg:w-30-screen">
+          <Members />
         </div>
       </div>
     </>

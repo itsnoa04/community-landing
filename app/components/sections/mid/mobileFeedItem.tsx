@@ -1,4 +1,4 @@
-import Bubble from "../global/bubble";
+import Bubble from "../../global/bubble";
 
 export interface MobileFeedItemProps {
   author: string;

@@ -9,37 +9,37 @@
         "id": 2,
         "authorName": "Ainslee McIlmorie",
         "avatar": "https://i.pravatar.cc/?u=105926601910",
-        "remark": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat."
+        "remark": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices "
     },
     {
         "id": 3,
         "authorName": "Lira Mitchelson",
         "avatar": "https://i.pravatar.cc/?u=746953770420",
-        "remark": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl."
+        "remark": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, Nulla nisl. Nunc nisl."
     },
     {
         "id": 4,
         "authorName": "Junette Telega",
         "avatar": "https://i.pravatar.cc/?u=984208491908",
-        "remark": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam."
+        "remark": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis."
     },
     {
         "id": 5,
         "authorName": "Daile Godsal",
         "avatar": "https://i.pravatar.cc/?u=31428012303",
-        "remark": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+        "remark": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes."
     },
     {
         "id": 6,
         "authorName": "Jackelyn Raubheim",
         "avatar": "https://i.pravatar.cc/?u=692028946925",
-        "remark": "Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum."
+        "remark": "Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim "
     },
     {
         "id": 7,
         "authorName": "Kathleen Wasielewicz",
         "avatar": "https://i.pravatar.cc/?u=546959934337",
-        "remark": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum."
+        "remark": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu,."
     },
     {
         "id": 8,
@@ -51,25 +51,25 @@
         "id": 9,
         "authorName": "Carree Mottram",
         "avatar": "https://i.pravatar.cc/?u=657781662030",
-        "remark": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh."
+        "remark": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis,"
     },
     {
         "id": 10,
         "authorName": "Frederico Etoile",
         "avatar": "https://i.pravatar.cc/?u=509707978340",
-        "remark": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat."
+        "remark": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quis"
     },
     {
         "id": 11,
         "authorName": "Corly Marcoolyn",
         "avatar": "https://i.pravatar.cc/?u=820487002256",
-        "remark": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam."
+        "remark": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla "
     },
     {
         "id": 12,
         "authorName": "Berny Feake",
         "avatar": "https://i.pravatar.cc/?u=906045155381",
-        "remark": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris."
+        "remark": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper."
     },
     {
         "id": 13,
@@ -81,12 +81,12 @@
         "id": 14,
         "authorName": "Gifford Stockall",
         "avatar": "https://i.pravatar.cc/?u=583575552606",
-        "remark": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui."
+        "remark": "In quis justo. Maecenas rhoncus aliquam lacus."
     },
     {
         "id": 15,
         "authorName": "Witty Wybourne",
         "avatar": "https://i.pravatar.cc/?u=181585366812",
-        "remark": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat."
+        "remark": "Suspendisse potenti. In eleifend quam a odio."
     }
 ]

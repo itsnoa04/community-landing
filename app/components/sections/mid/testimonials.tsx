@@ -5,8 +5,8 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import testimonialSchema from "../../schema/testimonial";
-import Bubble from "../global/bubble";
+import testimonialSchema from "../../../schema/testimonial";
+import Bubble from "../../global/bubble";
 
 const Testimonials = () => {
   const [testimonials, setTestimonials] = useState<testimonialSchema[]>([]);
@@ -27,7 +27,7 @@ const Testimonials = () => {
         SWIPE TO NAVIGATE
       </p>
 
-      <Swiper slidesPerView={2} spaceBetween={30} className="hidden md:block">
+      <Swiper slidesPerView={2} className="hidden md:block">
         {testimonials.map((item) => {
           return (
             <>

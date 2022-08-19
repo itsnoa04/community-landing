@@ -5,8 +5,8 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import faqSchema from "../../schema/faq";
-import Bubble from "../global/bubble";
+import faqSchema from "../../../schema/faq";
+import Bubble from "../../global/bubble";
 
 const FAQ = () => {
   const [faq, setFaq] = useState<faqSchema[]>([]);
@@ -25,17 +25,17 @@ const FAQ = () => {
         SWIPE TO NAVIGATE
       </p>
 
-      <Swiper slidesPerView={3} spaceBetween={30} className="hidden md:block">
+      <Swiper slidesPerView={3} className="hidden md:block">
         {faq.map((item) => {
           return (
             <>
               <SwiperSlide key={item.id}>
                 <Bubble className="m-5 p-5 min-h-30-screen  ">
                   <div className=" h-2/4 w-full justify-start items-center">
-                    <h1 className="text-2xl p-5  font-semibold bg-transparent">
+                    <h1 className="text-xl p-5  font-semibold bg-transparent">
                       Q: {item.question}
                     </h1>
-                    <p className="p-5">{item.answer}</p>
+                    <p className="p-5 text-sm">{item.answer}</p>
                   </div>
                 </Bubble>
               </SwiperSlide>
