@@ -20,7 +20,9 @@ const Feed = () => {
 
   return (
     <>
-      <h1 className="text-md font-bold text-white p-7 pb-1 pr-10">LIVE FEED</h1>
+      <h1 className="text-3xl font-bold text-white p-7 pb-1 pr-10">
+        LIVE FEED
+      </h1>
 
       <div className="hidden md:block">
         {feed.map((item) => {

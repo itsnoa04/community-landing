@@ -22,7 +22,9 @@ const Groups: React.FC<GroupsProps> = () => {
   return (
     <SimpleBar style={{ maxHeight: "100vh", width: "100%" }}>
       <div className="flex flex-col pl-5">
-        <h1 className="text-md font-bold text-white pb-2 pt-5">GROUPS</h1>
+        <h1 className="text-3xl font-bold text-gray-200 pb-5 pl-3 pt-5">
+          GROUPS
+        </h1>
         {groups.map((group) => {
           return (
             <GroupItem

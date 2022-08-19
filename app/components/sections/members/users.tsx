@@ -7,7 +7,6 @@ import Bubble from "../../global/bubble";
 import Creators from "./creators";
 import Members from "./members";
 import Mods from "./mods";
-
 export interface UsersProps {}
 
 const Users: React.FC<UsersProps> = (props) => {

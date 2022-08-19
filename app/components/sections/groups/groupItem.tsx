@@ -48,7 +48,7 @@ const GroupItem: React.FC<GroupItemProps> = ({
             height: "100%",
           }}
         >
-          <p>{description}</p>
+          <p className="text-xl text-gray-400">{description}</p>
         </div>
       </div>
     </Bubble>
