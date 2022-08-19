@@ -1,7 +1,5 @@
 import type { NextPage } from "next";
-import Groups from "../components/sections/groups/groups";
-import Members from "../components/sections/members/members";
-import Mid from "../components/sections/mid/mid";
+import Large from "../components/views/large";
 
 const Home: NextPage = () => {
   return (
@@ -20,17 +18,7 @@ const Home: NextPage = () => {
           transition: "none",
         }}
       ></div>
-      <div className="lg:flex">
-        <div className="flex lg:flex-auto">
-          <Groups />
-        </div>
-        <div className="lg:w-50-screen">
-          <Mid />
-        </div>
-        <div className="flex lg:w-30-screen">
-          <Members />
-        </div>
-      </div>
+      <Large />
     </>
   );
 };
