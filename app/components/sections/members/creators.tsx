@@ -18,6 +18,10 @@ const Creators: React.FC<CreatorsProps> = ({ creatorList }) => {
             lastName={user.lastName}
             icon={user.icon}
             bio={user.bio}
+            github={user.social.github}
+            linkedin={user?.social?.linkedin}
+            youtube={user.social.youtube}
+            twitter={user.social.twitter}
           />
         );
       })}

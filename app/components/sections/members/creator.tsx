@@ -1,3 +1,5 @@
+import Link from "next/link";
+import github from "../../../assets/github.svg";
 import Bubble from "../../global/bubble";
 
 export interface CreatorProps {
@@ -6,6 +8,10 @@ export interface CreatorProps {
   lastName: string;
   icon: string;
   bio: string;
+  github: string;
+  linkedin?: string;
+  youtube: string;
+  twitter: string;
 }
 
 const Creator: React.FC<CreatorProps> = ({
@@ -14,9 +20,13 @@ const Creator: React.FC<CreatorProps> = ({
   lastName,
   icon,
   bio,
+  github,
+  linkedin = "",
+  youtube,
+  twitter,
 }) => {
   return (
-    <Bubble key={id} className="m-5 ml-0 p-10 pt-5 mt-2">
+    <Bubble key={id} className="md:m-5 lg:ml-0 md:p-10 pt-5 mt-2">
       <h1 className=" font-black text-3xl uppercase ">{`${firstName} ${lastName}`}</h1>
       <div className="flex w-full h-30-screen p-2 pl-0 ">
         <div
@@ -36,7 +46,22 @@ const Creator: React.FC<CreatorProps> = ({
             height: "100%",
           }}
         >
-          <p className="text-sm xl:text-lg pt-0 p-5 font-bold">{bio}</p>
+          <p className="text-sm xl:text-lg pt-0 p-5 pr-0 font-bold">{bio}</p>
+
+          <div className="flex p-2 w-full gap-3 flex-wrap">
+            <Link href={github}>
+              <img src="/assets/github.svg" className="w-10" />
+            </Link>
+            <Link href={linkedin}>
+              <img src="/assets/linkedin.svg" className="w-10" />
+            </Link>
+            <Link href={youtube}>
+              <img src="/assets/youtube.svg" className="w-10" />
+            </Link>
+            <Link href={twitter}>
+              <img src="/assets/twitter.svg" className="w-10" />
+            </Link>
+          </div>
         </div>
       </div>
     </Bubble>
