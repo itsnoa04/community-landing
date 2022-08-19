@@ -6,7 +6,6 @@ import Bubble from "../global/bubble";
 export interface MembersProps {}
 
 const Members: React.FC<MembersProps> = (props) => {
-  const [users, setUsers] = useState<usersSchema[]>([]);
   const [creators, setCreators] = useState<usersSchema[]>([]);
   const [mods, setMods] = useState<usersSchema[]>([]);
   const [members, setMembers] = useState<usersSchema[]>([]);
@@ -14,10 +13,13 @@ const Members: React.FC<MembersProps> = (props) => {
   useEffect(() => {
     const getData = async () => {
       const res = await axios.get("/api/users");
-      await setUsers(res.data);
-      setCreators(users.filter((user) => user.role === "creator"));
-      setMods(users.filter((user) => user.role === "mod"));
-      setMembers(users.filter((user) => user.role === "member"));
+      await setCreators(
+        res.data.filter((person: any) => person.role === "creator")
+      );
+      await setMods(res.data.filter((person: any) => person.role === "mod"));
+      await setMembers(
+        res.data.filter((person: any) => person.role === "member")
+      );
     };
     getData();
   }, []);

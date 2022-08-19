@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import feed from "./data/feed.json";
+import faq from "./data/faq.json";
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  res.status(200).send(feed);
+  res.status(200).send(faq);
 }

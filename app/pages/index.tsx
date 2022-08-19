@@ -4,6 +4,7 @@ import "simplebar-react/dist/simplebar.min.css";
 import Members from "../components/members/members";
 import Banner from "../components/mid/banner";
 import Description from "../components/mid/description";
+import FAQ from "../components/mid/faq";
 import Feed from "../components/mid/feed";
 import Tagline from "../components/mid/tagline";
 import Testimonials from "../components/mid/testimonials";
@@ -32,6 +33,7 @@ const Home: NextPage = () => {
             <Tagline />
             <Description />
             <Testimonials />
+            <FAQ />
             <Feed />
             <div className="h-20-screen"></div>
           </SimpleBar>

@@ -5,13 +5,13 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import testimonialSchema from "../../schema/testimonialSchema";
+import testimonialSchema from "../../schema/testimonial";
 import Bubble from "../global/bubble";
 
 const Testimonials = () => {
   const [testimonials, setTestimonials] = useState<testimonialSchema[]>([]);
   const getData = useCallback(async () => {
-    const res = await axios.get("/api/users");
+    const res = await axios.get("/api/testimonials");
     await setTestimonials(res.data);
   }, []);
   useEffect(() => {
@@ -23,31 +23,83 @@ const Testimonials = () => {
       <h1 className="text-md font-bold text-white pt-3 p-7 pb-1 pr-10">
         TESTIMONIALS
       </h1>
+      <p className="text-sm text-white justify-center p-2 items-center text-center">
+        SWIPE TO NAVIGATE
+      </p>
 
-      <Swiper slidesPerView={"auto"} spaceBetween={30} className="mySwiper">
+      <Swiper slidesPerView={2} spaceBetween={30} className="hidden md:block">
         {testimonials.map((item) => {
           return (
-            <SwiperSlide key={item.id}>
-              <Bubble>
-                <div className="flex items-center">
-                  <div className="flex  mr-16">
-                    <img
-                      className="rounded-3xl p-1 w-fit h-24 bg-transparent"
-                      src={item.avatar}
-                      alt="author image"
-                    />
-                    <div className="flex flex-col items-start justify-center">
-                      <h1 className=" text-xl p-1 font-bold">
+            <>
+              <SwiperSlide key={item.id}>
+                <Bubble className="m-5 p-5 min-h-50-screen  ">
+                  <div className="flex h-2/4 w-full justify-start items-center">
+                    <h1 className="text-2xl p-5  font-semibold bg-transparent">
+                      {item.remark}
+                    </h1>
+                  </div>
+                  <div className="h-28" />
+                  <div className="flex  absolute bottom-5 right-5 items-center justify-end">
+                    <div className="px-5">
+                      <h1 className="text-2xl py-1 font-bold">
                         {item.authorName}
                       </h1>
                     </div>
+                    <img
+                      className="rounded-xl w-24 m-5 ml-2"
+                      src={item.avatar}
+                      alt="author image"
+                    />
                   </div>
-                  <h1 className="text-2xl uppercase font-semibold bg-transparent">
-                    {item.remarks}
-                  </h1>
-                </div>
-              </Bubble>
-            </SwiperSlide>
+                </Bubble>
+              </SwiperSlide>
+            </>
+          );
+        })}
+      </Swiper>
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 1,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={false}
+        modules={[EffectCoverflow, Pagination]}
+        slidesPerView={1}
+        spaceBetween={30}
+        className="md:hidden"
+      >
+        {testimonials.map((item) => {
+          return (
+            <>
+              <SwiperSlide key={item.id}>
+                <Bubble className="m-5 p-5 min-h-50-screen  ">
+                  <div className="flex h-2/4 w-full justify-start items-center">
+                    <h1 className="text-sm p-5  font-semibold bg-transparent">
+                      {item.remark}
+                    </h1>
+                  </div>
+                  <div className="h-10-screen" />
+                  <div className="flex  absolute bottom-5 right-5 items-center justify-end">
+                    <div className="px-5">
+                      <h1 className="text-2xl py-1 font-bold">
+                        {item.authorName}
+                      </h1>
+                    </div>
+                    <img
+                      className="rounded-xl w-16 m-5 ml-2"
+                      src={item.avatar}
+                      alt="author image"
+                    />
+                  </div>
+                </Bubble>
+              </SwiperSlide>
+            </>
           );
         })}
       </Swiper>
