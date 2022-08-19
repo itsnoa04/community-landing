@@ -1,6 +1,7 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import SimpleBar from "simplebar-react";
+import { UserContext } from "../../../context/UserContext";
 import usersSchema from "../../../schema/users";
 import Bubble from "../../global/bubble";
 import Creators from "./creators";
@@ -10,9 +11,8 @@ import Mods from "./mods";
 export interface UsersProps {}
 
 const Users: React.FC<UsersProps> = (props) => {
-  const [creators, setCreators] = useState<usersSchema[]>([]);
-  const [mods, setMods] = useState<usersSchema[]>([]);
-  const [members, setMembers] = useState<usersSchema[]>([]);
+  const { setCreators, setMods, setMembers, creators, mods, members } =
+    useContext(UserContext);
 
   useEffect(() => {
     const getData = async () => {

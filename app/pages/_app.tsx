@@ -2,6 +2,7 @@ import Color from "color";
 import type { AppProps } from "next/app";
 import Layout from "../components/global/layouts";
 import ColorMap from "../components/utils/colorMap";
+import { UserContext } from "../context/userContext";
 import "../styles/globals.css";
 import { colorMap } from "../templateConfig";
 
