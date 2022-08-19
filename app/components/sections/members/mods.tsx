@@ -10,9 +10,10 @@ const Mods: React.FC<ModsProps> = ({ modList }) => {
   return (
     <>
       <h1 className="text-md font-bold text-white pt-3 pl-0 pr-10">MODS</h1>
-      {modList.map((user) => {
+      {modList.map((user, key) => {
         return (
           <Mod
+            key={key}
             id={user.id}
             firstName={user.firstName}
             lastName={user.lastName}

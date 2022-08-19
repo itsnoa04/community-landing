@@ -26,10 +26,10 @@ const FAQ = () => {
       </p>
 
       <Swiper slidesPerView={3} className="hidden md:block">
-        {faq.map((item) => {
+        {faq.map((item, key) => {
           return (
             <>
-              <SwiperSlide key={item.id}>
+              <SwiperSlide key={key}>
                 <Bubble className="m-5 p-5 min-h-30-screen  ">
                   <div className=" h-2/4 w-full justify-start items-center">
                     <h1 className="text-xl p-5  font-semibold bg-transparent">

@@ -46,7 +46,9 @@ const Creator: React.FC<CreatorProps> = ({
             height: "100%",
           }}
         >
-          <p className="text-sm xl:text-lg pt-0 p-5 pr-0 font-bold">{bio}</p>
+          <p className="text-sm md:text-2xl lg:text-sm xl:text-lg pt-0 p-5 pr-0 font-bold">
+            {bio}
+          </p>
 
           <div className="flex p-2 w-full gap-3 flex-wrap">
             <Link href={github}>

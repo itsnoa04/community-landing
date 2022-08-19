@@ -28,10 +28,10 @@ const Testimonials = () => {
       </p>
 
       <Swiper slidesPerView={2} className="hidden md:block">
-        {testimonials.map((item) => {
+        {testimonials.map((item, key) => {
           return (
             <>
-              <SwiperSlide key={item.id}>
+              <SwiperSlide>
                 <Bubble className="m-5 p-5 min-h-50-screen  ">
                   <div className="flex h-2/4 w-full justify-start items-center">
                     <h1 className="text-2xl p-5  font-semibold bg-transparent">

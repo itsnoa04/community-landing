@@ -25,9 +25,10 @@ const Groups: React.FC<GroupsProps> = () => {
         <h1 className="text-3xl font-bold text-gray-200 pb-5 pl-3 pt-5">
           GROUPS
         </h1>
-        {groups.map((group) => {
+        {groups.map((group, key) => {
           return (
             <GroupItem
+              key={key}
               id={group.id}
               name={group.name}
               banner={group.banner}
