@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       screens: {
         lg: "1214px",
+        xl: "1594px",
       },
       minHeight: {
         "10-screen": "10vh",
