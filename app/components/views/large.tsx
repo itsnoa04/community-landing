@@ -1,5 +1,5 @@
 import Groups from "../sections/groups/groups";
-import Members from "../sections/members/members";
+import Users from "../sections/members/users";
 import Mid from "../sections/mid/mid";
 
 export interface LargeProps {}
@@ -14,7 +14,7 @@ const Large: React.FC<LargeProps> = () => {
         <Mid />
       </div>
       <div className=" hidden lg:flex lg:w-30-screen">
-        <Members />
+        <Users />
       </div>
     </div>
   );
