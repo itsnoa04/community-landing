@@ -71,16 +71,49 @@ const MobileNavigation: React.FC<MobileNavigationProps> = (props) => {
 
   return (
     <div
-      className="text-white p-5 m-5 w-90-screen text-center max-w-2xl rounded-xl flex justify-evenly"
+      className="text-white p-2 m-5 w-90-screen md:w-50-screen text-center max-w-2xl rounded-xl flex justify-evenly items-center"
       style={{ backgroundColor: Color(colorMap["900"]).desaturate(0.5).hex() }}
     >
-      <div>
-        <Icons type="groups" />
+      <div
+        className="py-3 px-5 rounded-xl"
+        style={
+          currentPage === "groups"
+            ? {
+                backgroundColor: Color(colorMap["500"]).saturate(0.7).hex(),
+              }
+            : {
+                backgroundColor: "inherit",
+              }
+        }
+      >
+        <Icons type="groups" active={true} />
       </div>
-      <div className={currentPage}>
+      <div
+        className="py-3 px-5 rounded-xl"
+        style={
+          currentPage === "home"
+            ? {
+                backgroundColor: Color(colorMap["500"]).saturate(0.7).hex(),
+              }
+            : {
+                backgroundColor: "inherit",
+              }
+        }
+      >
         <Icons type="home" active={true} />
       </div>
-      <div>
+      <div
+        className="py-3 px-5 rounded-xl"
+        style={
+          currentPage === "users"
+            ? {
+                backgroundColor: Color(colorMap["500"]).saturate(0.7).hex(),
+              }
+            : {
+                backgroundColor: "inherit",
+              }
+        }
+      >
         <Icons type="users" />
       </div>
     </div>
