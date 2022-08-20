@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import testimonialSchema from "../../../schema/testimonial";
 import Bubble from "../../global/bubble";
+import Testimonial from "./testimonial";
 
 const Testimonials = () => {
   const [testimonials, setTestimonials] = useState<testimonialSchema[]>([]);
@@ -30,30 +31,13 @@ const Testimonials = () => {
       <Swiper slidesPerView={2} className="hidden md:block">
         {testimonials.map((item, key) => {
           return (
-            <>
-              <SwiperSlide>
-                <Bubble className="m-5 p-5 min-h-50-screen  ">
-                  <div className="flex h-2/4 w-full justify-start items-center">
-                    <h1 className="text-2xl p-5  font-semibold bg-transparent">
-                      {item.remark}
-                    </h1>
-                  </div>
-                  <div className="h-28" />
-                  <div className="flex  absolute bottom-5 right-5 items-center justify-end">
-                    <div className="px-5">
-                      <h1 className="text-2xl py-1 font-bold">
-                        {item.authorName}
-                      </h1>
-                    </div>
-                    <img
-                      className="rounded-xl w-24 m-5 ml-2"
-                      src={item.avatar}
-                      alt="author image"
-                    />
-                  </div>
-                </Bubble>
-              </SwiperSlide>
-            </>
+            <SwiperSlide key={key}>
+              <Testimonial
+                remark={item.remark}
+                authorName={item.authorName}
+                avatar={item.avatar}
+              />
+            </SwiperSlide>
           );
         })}
       </Swiper>
