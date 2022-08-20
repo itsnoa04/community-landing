@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 import LoginButton from "../components/global/loginButton";
 import MobileNavigation from "../components/global/mobileNavigation";
 import Large from "../components/views/large";
@@ -16,6 +17,8 @@ const Home: NextPage = () => {
     "home"
   );
   const [swiper, setSwiper] = useState<any>();
+  const { ref, inView } = useInView();
+
   return (
     <>
       <UserContext.Provider
@@ -32,6 +35,7 @@ const Home: NextPage = () => {
           value={{ currentPage, setCurrentPage, swiper, setSwiper }}
         >
           <div
+            ref={ref}
             className="mist"
             style={{
               pointerEvents: "none",
@@ -45,14 +49,23 @@ const Home: NextPage = () => {
               transition: "none",
             }}
           ></div>
-          <div className="fixed z-30 bottom-0 w-screen flex flex-col h-20-screen items-center justify-center">
+          <div
+            className={`fixed z-30 bottom-0 w-screen flex flex-col h-20-screen items-center justify-center translate-y-full ${
+              !inView ? "opacity-0 " : "opacity-100 translate-y-0"
+            }`}
+            style={{
+              transition: "all 1.5s ease",
+            }}
+          >
             <LoginButton />
             <div className="lg:hidden">
               <MobileNavigation />
             </div>
           </div>
-          <Large />
-          <Small />
+          <div className={`${!inView ? "opacity-0 " : "opacity-100"}`}>
+            <Large />
+            <Small />
+          </div>
         </MobileNavContext.Provider>
       </UserContext.Provider>
     </>
