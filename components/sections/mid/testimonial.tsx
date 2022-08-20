@@ -31,12 +31,12 @@ const Testimonial: React.FC<TestimonialProps> = ({
           </h1>
         </div>
         <div className="h-28" />
-        <div className="flex  absolute bottom-5 right-5 items-center justify-end">
+        <div className="flex  w-10-screen  absolute bottom-5 right-5 items-center  justify-end">
           <div className="px-5">
-            <h1 className="text-2xl py-1 font-bold">{authorName}</h1>
+            <h1 className="text-xl py-1 font-bold">{authorName}</h1>
           </div>
           <img
-            className="rounded-xl w-24 m-5 ml-2"
+            className="rounded-lg w-24 m-5 ml-2"
             src={avatar}
             alt="author image"
           />
