@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Head from "next/head";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import Lottie from "react-lottie";
@@ -10,6 +11,7 @@ import { MobileNavContext } from "../context/MobileNavigationContext";
 import { UserContext } from "../context/UserContext";
 import confettiData from "../lottie/confetti.json";
 import usersSchema from "../schema/users";
+import options from "../templateConfig";
 
 const Home: NextPage = () => {
   const [creators, setCreators] = useState<usersSchema[]>([]);
@@ -37,6 +39,17 @@ const Home: NextPage = () => {
         <MobileNavContext.Provider
           value={{ currentPage, setCurrentPage, swiper, setSwiper }}
         >
+          <Head>
+            <title>
+              {options.community.name} | {options.community.tagline}
+            </title>
+            <link
+              rel="shortcut icon"
+              href={options.community.logo}
+              type="image/x-icon"
+            />
+            <meta name="description" content={options.community.description} />
+          </Head>
           <div
             ref={ref}
             className="mist"
@@ -92,7 +105,7 @@ const Home: NextPage = () => {
               <MobileNavigation />
             </div>
           </div>
-          <div className={`${!inView ? "opacity-0 " : "opacity-100"}`}>
+          <div className={` ${!inView ? "opacity-0 " : "opacity-100"}`}>
             <Large />
             <Small />
           </div>
