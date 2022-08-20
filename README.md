@@ -6,7 +6,7 @@ This is a community landing page made for pensil find coder hackathon.
 
 ## Design
 
-| Mobile                                                     | Desktop                                          |
+| Desktop                                                    | Mobile                                           |
 | :--------------------------------------------------------- | :----------------------------------------------- |
 | ![Desktop](https://i.ibb.co/MRxz71z/Mac-Book-Pro-16-4.png) | ![Mobile](https://i.ibb.co/dkJS2pZ/13-Pro-1.png) |
 
