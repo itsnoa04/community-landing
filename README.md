@@ -1,27 +1,109 @@
-# Next.js + Tailwind CSS Example
+# Community Landing Page 🚀
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This is a community landing page made for pensil find coder hackathon.
 
-## Deploy your own
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Design
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+| Mobile                                                     | Desktop                                          |
+| :--------------------------------------------------------- | :----------------------------------------------- |
+| ![Desktop](https://i.ibb.co/MRxz71z/Mac-Book-Pro-16-4.png) | ![Mobile](https://i.ibb.co/dkJS2pZ/13-Pro-1.png) |
 
-## How to use
+## API Reference 🔗
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+This project uses a mock API made with next JS to emulate getting data from an external API
+This is the schema for
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
+#### Get Users
+
+```http
+  GET /api/users
 ```
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+Data Schema :
+
+| Parameter   | Type     |
+| :---------- | :------- |
+| `id`        | `number` |
+| `firstName` | `string` |
+| `lastName`  | `string` |
+| `role`      | `string` |
+| `bio`       | `string` |
+| `social`    | `object` |
+| `icon`      | `URL`    |
+
+social Schema :
+
+| Parameter  | Type  |
+| :--------- | :---- |
+| `youtube`  | `URL` |
+| `twitter`  | `URL` |
+| `github`   | `URL` |
+| `linkedin` | `URL` |
+
+#### Get Groups
+
+```http
+  GET /api/groups
 ```
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
+| Parameter     | Type     |
+| :------------ | :------- |
+| `id`          | `number` |
+| `name`        | `string` |
+| `banner`      | `URL`    |
+| `description` | `string` |
+| `color`       | `hex`    |
+| `textColor`   | `hex`    |
+
+#### Get FAQ
+
+```http
+  GET /api/faq
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+| Parameter  | Type     |
+| :--------- | :------- |
+| `id`       | `number` |
+| `question` | `string` |
+| `answer`   | `string` |
+
+#### Get Feed
+
+```http
+  GET /api/feed
+```
+
+| Parameter   | Type     |
+| :---------- | :------- |
+| `id`        | `number` |
+| `author`    | `string` |
+| `authorImg` | `string` |
+| `authorID`  | `number` |
+| `title`     | `string` |
+| `body`      | `string` |
+| `group`     | `object` |
+
+group schema :
+
+| Parameter   | Type     |
+| :---------- | :------- |
+| `id`        | `number` |
+| `name`      | `string` |
+| `banner`    | `URL`    |
+| `color`     | `hex`    |
+| `textColor` | `hex`    |
+
+#### Get Testimonials
+
+```http
+  GET /api/testimonials
+```
+
+| Parameter    | Type     |
+| :----------- | :------- |
+| `id`         | `number` |
+| `authorName` | `string` |
+| `avatar`     | `URL`    |
+| `remark`     | `string` |
