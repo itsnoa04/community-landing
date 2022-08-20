@@ -1,5 +1,5 @@
 export default interface groupSchema {
-  id: string;
+  id: number;
   name: string;
   banner: string;
   description: string;
