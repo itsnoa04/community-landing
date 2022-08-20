@@ -15,6 +15,7 @@ const Home: NextPage = () => {
   const [currentPage, setCurrentPage] = useState<"groups" | "users" | "home">(
     "home"
   );
+  const [swiper, setSwiper] = useState<any>();
   return (
     <>
       <UserContext.Provider
@@ -27,7 +28,9 @@ const Home: NextPage = () => {
           setMembers,
         }}
       >
-        <MobileNavContext.Provider value={{ currentPage, setCurrentPage }}>
+        <MobileNavContext.Provider
+          value={{ currentPage, setCurrentPage, swiper, setSwiper }}
+        >
           <div
             className="mist"
             style={{
