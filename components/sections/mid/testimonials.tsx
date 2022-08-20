@@ -21,7 +21,7 @@ const Testimonials = () => {
 
   return (
     <>
-      <h1 className="text-3xl font-bold text-white pt-3 p-7 pb-1 pr-10">
+      <h1 className="text-xl font-bold text-white pt-3 p-7 pb-1 pr-10">
         TESTIMONIALS
       </h1>
       <p className="text-sm text-white justify-center p-2 items-center text-center">

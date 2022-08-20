@@ -21,7 +21,7 @@ const FAQ = () => {
 
   return (
     <>
-      <h1 className="text-3xl font-bold text-white pt-3 p-7 pb-1 pr-10">FAQ</h1>
+      <h1 className="text-xl font-bold text-white pt-3 p-7 pb-1 pr-10">FAQ</h1>
       <p className="text-sm text-white justify-center items-center text-center">
         SWIPE TO NAVIGATE
       </p>
