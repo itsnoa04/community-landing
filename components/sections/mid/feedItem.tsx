@@ -1,3 +1,4 @@
+import { useInView } from "react-intersection-observer";
 import Bubble from "../../global/bubble";
 
 export interface FeedItemProps {
@@ -16,8 +17,18 @@ const FeedItem = ({
   authorImage,
   groupTextColor,
 }: FeedItemProps) => {
+  const { ref, inView } = useInView();
+
   return (
-    <div>
+    <div
+      ref={ref}
+      className={` -translate-y-full ${
+        !inView ? "opacity-0 " : "opacity-100 -translate-y-0"
+      }`}
+      style={{
+        transition: "all 1.5s ease",
+      }}
+    >
       <Bubble>
         <div className="flex items-center">
           <div className="flex  mr-16">

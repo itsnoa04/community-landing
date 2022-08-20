@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import faqSchema from "../../../schema/faq";
 import Bubble from "../../global/bubble";
+import FaqItem from "./faqItem";
 
 const FAQ = () => {
   const [faq, setFaq] = useState<faqSchema[]>([]);
@@ -30,14 +31,7 @@ const FAQ = () => {
           return (
             <>
               <SwiperSlide key={key}>
-                <Bubble className="m-5 p-5 min-h-30-screen  ">
-                  <div className=" h-2/4 w-full justify-start items-center">
-                    <h1 className="text-xl p-5  font-semibold bg-transparent">
-                      Q: {item.question}
-                    </h1>
-                    <p className="p-5 text-sm">{item.answer}</p>
-                  </div>
-                </Bubble>
+                <FaqItem question={item.question} answer={item.answer} />
               </SwiperSlide>
             </>
           );
