@@ -12,7 +12,7 @@ export interface IconsProps {
 }
 
 const Icons: any = ({ type, active = false }: IconsProps) => {
-  const activeColor = colorMap["30"];
+  const activeColor = colorMap["10"];
   const inactiveColor = colorMap["50"];
   switch (type) {
     case "groups":
@@ -66,16 +66,16 @@ const Icons: any = ({ type, active = false }: IconsProps) => {
 };
 
 const MobileNavigation: React.FC<MobileNavigationProps> = (props) => {
-  const { currentPage } = useContext(MobileNavContext);
-  console.log(currentPage);
+  const { currentPage, setCurrentPage } = useContext(MobileNavContext);
 
   return (
     <div
       className="text-white p-2 m-5 w-90-screen md:w-50-screen text-center max-w-2xl rounded-xl flex justify-evenly items-center"
       style={{ backgroundColor: Color(colorMap["900"]).desaturate(0.5).hex() }}
     >
-      <div
-        className="py-3 px-5 rounded-xl"
+      <button
+        onClick={() => setCurrentPage("groups")}
+        className="py-3 px-5 rounded-xl outline-none"
         style={
           currentPage === "groups"
             ? {
@@ -86,10 +86,11 @@ const MobileNavigation: React.FC<MobileNavigationProps> = (props) => {
               }
         }
       >
-        <Icons type="groups" active={true} />
-      </div>
-      <div
-        className="py-3 px-5 rounded-xl"
+        <Icons type="groups" active={currentPage === "groups"} />
+      </button>
+      <button
+        onClick={() => setCurrentPage("home")}
+        className="py-3 px-5 rounded-xl outline-none"
         style={
           currentPage === "home"
             ? {
@@ -100,10 +101,11 @@ const MobileNavigation: React.FC<MobileNavigationProps> = (props) => {
               }
         }
       >
-        <Icons type="home" active={true} />
-      </div>
-      <div
-        className="py-3 px-5 rounded-xl"
+        <Icons type="home" active={currentPage === "home"} />
+      </button>
+      <button
+        onClick={() => setCurrentPage("users")}
+        className="py-3 px-5 rounded-xl outline-none"
         style={
           currentPage === "users"
             ? {
@@ -114,8 +116,8 @@ const MobileNavigation: React.FC<MobileNavigationProps> = (props) => {
               }
         }
       >
-        <Icons type="users" />
-      </div>
+        <Icons type="users" active={currentPage === "users"} />
+      </button>
     </div>
   );
 };
