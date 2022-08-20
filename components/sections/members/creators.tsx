@@ -8,7 +8,7 @@ export interface CreatorsProps {
 
 const Creators: React.FC<CreatorsProps> = ({ creatorList }) => {
   return (
-    <>
+    <div>
       <h1 className="text-md font-bold text-white pt-5 px-5">CREATORS</h1>
       {creatorList.map((user, key) => {
         return (
@@ -27,7 +27,7 @@ const Creators: React.FC<CreatorsProps> = ({ creatorList }) => {
         );
       })}
       ;
-    </>
+    </div>
   );
 };
 

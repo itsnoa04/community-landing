@@ -18,7 +18,7 @@ const Member: React.FC<MemberProps> = ({ id, icon, firstName, lastName }) => {
           !inView ? "opacity-0 " : "opacity-100 translate-x-0"
         }`}
         style={{
-          transition: "all 0.5s ease",
+          transition: "all 1s ease",
         }}
       >
         <img src={icon} alt="user avatar" className="w-16 rounded-xl" />
