@@ -26,7 +26,6 @@ const GroupItem: React.FC<GroupItemProps> = ({
         key={id}
         style={{
           transition: "all 1s ease",
-          transitionDelay: `${id / 5}s`,
         }}
         className={`m-5 ml-0 p-5 pt-5 mt-2 group-item -translate-x-full ${
           !inView ? "opacity-0 " : "opacity-100 -translate-x-0"
