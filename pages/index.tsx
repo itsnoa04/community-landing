@@ -1,12 +1,14 @@
 import type { NextPage } from "next";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
+import Lottie from "react-lottie";
 import LoginButton from "../components/global/loginButton";
 import MobileNavigation from "../components/global/mobileNavigation";
 import Large from "../components/views/large";
 import Small from "../components/views/small";
 import { MobileNavContext } from "../context/MobileNavigationContext";
 import { UserContext } from "../context/UserContext";
+import confettiData from "../lottie/confetti.json";
 import usersSchema from "../schema/users";
 
 const Home: NextPage = () => {
@@ -18,6 +20,7 @@ const Home: NextPage = () => {
   );
   const [swiper, setSwiper] = useState<any>();
   const { ref, inView } = useInView();
+  const [isConfettiStopped, setIsConfettiStopped] = useState(true);
 
   return (
     <>
@@ -57,7 +60,34 @@ const Home: NextPage = () => {
               transition: "all 1.5s ease",
             }}
           >
-            <LoginButton />
+            <div
+              className={`absolute ${
+                isConfettiStopped ? "hidden" : "block"
+              } -z-10`}
+            >
+              <Lottie
+                eventListeners={[
+                  {
+                    eventName: "complete",
+                    callback: () => {
+                      setIsConfettiStopped(true);
+                    },
+                  },
+                ]}
+                isStopped={isConfettiStopped}
+                options={{
+                  loop: false,
+                  autoplay: false,
+                  animationData: confettiData,
+                  rendererSettings: {
+                    preserveAspectRatio: "xMidYMid slice",
+                  },
+                }}
+                height={500}
+                width={1000}
+              />
+            </div>
+            <LoginButton onClick={() => setIsConfettiStopped(false)} />
             <div className="lg:hidden">
               <MobileNavigation />
             </div>

@@ -2,9 +2,11 @@ import Color from "color";
 import { colorMap } from "../../templateConfig";
 import Button from "./button";
 
-export interface LoginButtonProps {}
+export interface LoginButtonProps {
+  onClick: () => void;
+}
 
-const LoginButton: React.FC<LoginButtonProps> = ({}) => {
+const LoginButton: React.FC<LoginButtonProps> = ({ onClick = () => {} }) => {
   return (
     <div
       className="flex justify-center items-center md:p-5 rounded-2xl"
@@ -21,6 +23,7 @@ const LoginButton: React.FC<LoginButtonProps> = ({}) => {
         Want to Join the party ?
       </h1>
       <Button
+        onClick={() => onClick()}
         className="font-black btn rounded-2xl"
         color={colorMap["50"]}
         textColor={colorMap["900"]}
