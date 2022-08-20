@@ -66,15 +66,27 @@ const Icons: any = ({ type, active = false }: IconsProps) => {
 };
 
 const MobileNavigation: React.FC<MobileNavigationProps> = (props) => {
-  const { currentPage, setCurrentPage } = useContext(MobileNavContext);
+  const { currentPage, setCurrentPage, swiper } = useContext(MobileNavContext);
 
+  const moveToPage = (page: string) => {
+    const screenIndexMap: any = {
+      groups: 0,
+      home: 1,
+      users: 2,
+    };
+    setCurrentPage(page);
+    swiper.slideTo(screenIndexMap[page]);
+  };
   return (
     <div
       className="text-white p-2 m-5 w-90-screen md:w-50-screen text-center max-w-2xl rounded-xl flex justify-evenly items-center"
       style={{ backgroundColor: Color(colorMap["900"]).desaturate(0.5).hex() }}
     >
       <button
-        onClick={() => setCurrentPage("groups")}
+        onClick={() => {
+          setCurrentPage("groups");
+          moveToPage("groups");
+        }}
         className="py-3 px-5 rounded-xl outline-none"
         style={
           currentPage === "groups"
@@ -89,7 +101,10 @@ const MobileNavigation: React.FC<MobileNavigationProps> = (props) => {
         <Icons type="groups" active={currentPage === "groups"} />
       </button>
       <button
-        onClick={() => setCurrentPage("home")}
+        onClick={() => {
+          setCurrentPage("home");
+          moveToPage("home");
+        }}
         className="py-3 px-5 rounded-xl outline-none"
         style={
           currentPage === "home"
@@ -104,7 +119,10 @@ const MobileNavigation: React.FC<MobileNavigationProps> = (props) => {
         <Icons type="home" active={currentPage === "home"} />
       </button>
       <button
-        onClick={() => setCurrentPage("users")}
+        onClick={() => {
+          setCurrentPage("users");
+          moveToPage("users");
+        }}
         className="py-3 px-5 rounded-xl outline-none"
         style={
           currentPage === "users"
