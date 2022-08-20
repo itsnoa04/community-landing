@@ -2,11 +2,15 @@
 
 This is a community landing page made for pensil find coder hackathon.
 
+## Demo
+
+demo : https://community-landing-five.vercel.app/
+
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 ## Design
 
-| Desktop                                                    | Mobile                                           |
+| Mobile                                                     | Desktop                                          |
 | :--------------------------------------------------------- | :----------------------------------------------- |
 | ![Desktop](https://i.ibb.co/MRxz71z/Mac-Book-Pro-16-4.png) | ![Mobile](https://i.ibb.co/dkJS2pZ/13-Pro-1.png) |
 
